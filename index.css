@@ -1,0 +1,596 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.top-footer {
+    background-color: #4598ed;
+    height: 2.7rem;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: .5rem;
+}
+
+
+.fullscreen-header{
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient( ellipse ,#811331, #F88379, rgb(98, 98, 177), rgb(19, 73, 19), #AA336A, white)  ;
+    background-size: 500% 500%;
+    background-repeat: no-repeat;
+    opacity: .9;
+    animation: animeBT 20s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+}  
+
+@keyframes animeBT {
+    0%{background-position: 0%;}
+    100%{background-position: 100%;}
+}
+
+ .wave {
+    overflow: hidden;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} 
+
+ /* .fullscreen-header::after{
+    content: ' ';
+    width: 100%;
+    height: 10vh;
+    background-image: url(wave.png);
+    position: absolute;
+    bottom: 10;
+    background-color: red;
+}  */
+
+
+
+.container1 {
+    padding: .5rem 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 5rem;
+}
+
+.navbar--item{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    opacity: .8;
+    transition: .3s all;
+}
+
+.navbar--item:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s all;
+    transform: translateY(-2px);
+}
+
+.navbar--item__link {
+    color: white;
+}
+
+#last-child{
+    background: white;
+    color: #932433;
+    margin-top: -.5rem;
+    font-weight: 500;
+    border-radius: 545px;
+    width: 8rem;
+    height: 3.1rem;
+    box-shadow: 1px 1px 12px  #ad1c0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container2 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 30%;
+    position: relative;
+    left: 12rem;
+    top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.container2--yazi {
+    margin-bottom: 1rem;
+}
+
+.container2--button {
+    background-image: linear-gradient(to right, #f12711, #ad1c0d);
+    border-radius: 545454545px;
+    width: 40%;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 12px  #ad1c0d;
+    opacity: .8;
+    transition: .3s all;
+} 
+.container2--button:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s all;
+    transform: translateY(-2px);
+}
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 3px solid rgb(223, 119, 119);
+    border-right: 3px solid rgb(223, 119, 119);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: (45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+        100% {
+        opacity: 0;
+        transform: (45deg) translate(20px, 20px);
+    }
+}
+
+
+.resim1 {
+    width: 40%;
+    height: 79%;
+    position: absolute;
+    top: 14%;
+    left: 55%;
+}
+
+
+
+.card-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: -3rem;
+    opacity: 1 !important;
+}
+
+.card {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin-left: 1.9rem;
+    height: 310px;
+    width: 350px;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 5px 4px 20px 0px #0000005c;
+    transition: .3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+.card-green {
+    background: linear-gradient(45deg, #569e0e, #9cdc01);
+    
+}
+
+.card-red {
+    background: linear-gradient(45deg, #ff896b, #fc5b42); 
+    
+}
+
+.card-blue {
+    background: linear-gradient(45deg, #5260d5, #42a4f3);
+    
+}
+
+.card--body {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 300px;
+    position: relative;
+}
+
+.card--icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 40%;
+    top: 2%;
+}
+
+.card--baslik {
+    position: absolute;
+    top: 30%;
+    font-size: 25px;
+    margin-bottom: .7rem;
+}
+
+.card--yazi {
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.card--baslik {
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.underline {
+    position: absolute;
+    width: 80%;
+    background: #dee2e65c;
+    height: 6px;
+    margin-left: 15px;
+    bottom: 0;
+    z-index: 999;
+}
+
+
+.urunler {
+    margin: 5rem 9rem 0rem 9rem;
+    border: 3px solid #932432;
+    padding: 2rem;
+   border-radius: 10px;
+}
+
+.urunler--baslik {
+    position: relative;
+    margin-bottom: 3.3rem;
+    
+}
+
+.urunler--baslik:hover {
+    background: transparent;
+}
+
+.urunler--baslik__icon {
+    margin-left: 3rem;
+    position: absolute;
+}
+
+.urunler--baslik__yazi{
+    font-size: 2rem;
+    color: black;
+    margin-left: 7rem;
+}
+
+.cards-holder {
+    display: flex;
+}
+.cards {
+    border-radius: 20px;
+    height: 380px;
+    background-image: url(edgar-castrejon-1CsaVdwfIew-unsplash.jpg);
+    background-size: cover;
+    width: 23%;
+    position: relative;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    transition: .2s ease-in-out;
+    margin-left: 2rem;
+    box-shadow: -5px 4px 20px 0px #00000017;
+    margin-bottom: 2rem;
+}
+
+.renkdeneme {
+  background:  linear-gradient(to right,white, #56ab2f) ;
+}
+
+.cards:hover{
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    transform: translateY(-4px);
+}
+
+.cards-baslik {
+     position: absolute;
+     bottom: 30%;
+     font-size: 1.3rem;
+     text-align: left;
+
+}
+
+.cards-altbaslik {
+    position: absolute;
+    bottom: 25%;
+    font-size: 1rem;
+}
+
+.detaylar {
+    width: 80%;
+    height: 3rem;
+    position: absolute;
+    bottom: -3%;
+    background:linear-gradient( 135deg ,#42a4f3,#5260d5,#5260d5,#42a4f3); ;
+    left: 10%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: -5px 4px 20px 0px #00000017;
+    letter-spacing: 1px;
+    padding-top: .7rem;
+    font-weight: bold;
+    transition: .3s all;
+    background-size: 300% 100%;
+}
+
+.detaylar:hover{
+    cursor: pointer;
+    transition: .3s all;
+    transform: translateY(-4px);
+    background-size: 300% 100%;
+   background:  linear-gradient(135deg,#42a4f3,#5260d5,#5260d5,#42a4f3);
+}
+
+.coksatan {
+    width: 4.3rem;
+    height: 4.7rem;
+    border-radius: 20px;
+    position: absolute;
+    top: -7%;
+    left: -7%;
+    text-align: center;
+    padding: 1rem;
+    background:linear-gradient(45deg, #932432, rgb(252, 91, 66)); ;
+}
+
+.faq {
+    margin: 5rem 9rem 2rem 9rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.sorular--baslik {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.sorular--baslik__yazi {
+    color: black !important;
+    position: absolute;
+    left: 20%;
+    font-size: 2.6rem;
+}
+
+.sorular--baslik__icon {
+    position: absolute;
+    left: 13%;
+}
+
+.sorular {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.soru {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, red, rgb(90, 3, 3));
+    border-radius: 20px;
+    position: relative;
+    transition: .3s ease;
+}
+.soru:last-child {
+    margin-bottom: 0;
+}
+
+/* .soru:hover > .ilkdiv {
+    transition: .3s ease;
+    transform: translateX(10px);
+} */
+
+
+.ilkdiv {
+    height: 4rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 3rem;
+    transition: all 0.3s ease 0s; 
+}
+
+.soru:hover {
+    padding-left: 30px;
+}
+
+
+
+.ikincidiv {
+    border-radius: 0px 0px 20px 20px;
+    max-height: 1px;
+    overflow: hidden;  
+    transition: all 0.3s ease 0s;    
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input:checked +.ilkdiv {
+    border-radius: 20px 20px 0px 0px;
+}
+input:checked +.ilkdiv + .ikincidiv {
+    max-height: 700px;
+    padding: 0px 0px 15px 55px;
+    opacity: 1;
+}
+
+
+
+.footer-container {
+   color: white;
+    height: 100px;
+    background: linear-gradient(to right,#DE354C, #932432,#3C1874);
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.wave2 {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.footer--yazi {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.footer--yazi2 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+.fas {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.fa1 {  
+    top: 50%;
+    left: 76%;
+}
+
+.fa2 {  
+    top: 50%;
+    left: 80%;
+}
+
+.fa3 {  
+    top: 50%;
+    left: 78%;
+}
+
+
+.sohbet-container {
+   cursor: pointer;
+    justify-content: flex-start;
+    width: 300px;
+    position: fixed;
+    background: transparent;
+    bottom: 8%;
+    right: 0;
+}
+
+
+.sohbet {
+    background: #932433e7;
+    width: 250px;
+    height: 50px;
+    border-radius: 1623px;
+    box-shadow: rgb(0 18 46 / 18%) 0px 2px 20px 0px;
+    padding: 10px 15px;
+    position: relative;
+    transition: all .2s;
+}
+
+.sohbet:hover {
+    background: white;
+    transition: all .2s;
+}
+
+.sohbet:hover > .sohbet--yazi {
+    color: #932433;
+}
+
+.sohbet--yazi {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+
+.sohbet--icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+
+
+
+
+
+ 
+@media only screen and (max-width: 1090px) {
+
+}
+
